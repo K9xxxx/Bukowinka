@@ -37,7 +37,6 @@ let scene = new ScrollMagic.Scene({
     triggerHook:0.15,
     offset:100
   })
-  .addIndicators()
   .setTween(tlpercentage)
   .addTo(controller);
 
@@ -46,7 +45,6 @@ let sceneNav = new ScrollMagic.Scene({
     triggerHook:0,
     offset:10
   })
-  .addIndicators()
   .setClassToggle(".nav-desk","active")
   .addTo(controller);
 
@@ -55,7 +53,6 @@ let scenetree = new ScrollMagic.Scene({
     triggerHook:0,
     offset:10
   })
-  .addIndicators()
   .setClassToggle(".icofont-tree-alt","active")
   .addTo(controller);
 
@@ -64,7 +61,6 @@ let sceneArrow = new ScrollMagic.Scene({
     triggerHook:0,
     offset:170
   })
-  .addIndicators()
   .setClassToggle(".bootom-arrow","active")
   .addTo(controller);
 
