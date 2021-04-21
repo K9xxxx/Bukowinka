@@ -10,7 +10,6 @@ let sceneNav = new ScrollMagic.Scene({
     triggerHook:0,
     offset:10
   })
-  .addIndicators()
   .setClassToggle(".nav-desk","active")
   .addTo(controller);
 
