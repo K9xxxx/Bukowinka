@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+
+body::-webkit-scrollbar-thumb {
+  background-color: hsl(0,0%,10%);
+  outline: 1px solid hsl(0,0%,40%);
+}
+colors{
+    color:hsl(130, 69%, 30%);
+    color:hsl(310, 27%, 53%);
+    color:hsl(218, 84%, 50%);
+    color:hsl(38, 84%, 50%);
+}
+a{
+    text-decoration:none;
+}
+body{
+    background:hsl(0,0%,95%)
+}
+nav {
+    position:fixed;
+    z-index:999;
+    width:100%;
+}
+.nav-desk{
+    padding:20px;
+    background: hsl(0,0%,10%);
+    width:100%;
+    transition:all .3s ease-in-out;
+}
+.nav-desk.active{
+    padding:0;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    background:hsl(130, 49%, 30%);
+}
+nav.active > ul li a{
+    color:hsl(0,0%,90%);
+}
+nav.active > ul .logo-bukowinka a{
+    color:hsl(130, 49%, 60%);
+    font-weight:bold;
+}
+nav ul{
+    width:60%;
+    margin:0 auto;
+    padding:15px 0px;
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+    position:relative;
+}
+nav ul li a{
+    color:hsl(0,0%,80%);
+    font-size:20px;
+    list-style: none;
+    transition:color .3s ease-in-out;
+}
+nav ul li a:hover{
+    color:green;
+    font-size:20px;
+    list-style: none;
+    transition:color .3s ease-in-out;
+}
+.nav-mob{
+    display:none;
+}
+.logo-bukowinka a{
+    font-family: 'Dancing Script', cursive;
+    font-size:24px;
+}
+.logo-bukowinka a:hover{
+    font-family: 'Dancing Script', cursive;
+    font-size:24px;
+}
+
+
+footer{
+    position:relative;
+    width:100%;
+    height:350px;
+    background: linear-gradient(to bottom, hsl(0,0%,10%),hsl(0,0%,20%));
+}
+.main-footer{
+    height:300px;
+    text-align: center;
+    padding-top:10px;
+}
+.realization-footer{
+    text-align:center;
+    height:50px;
+}
+.realization-footer p{
+    color:hsl(0,0%,70%);
+}
+.realization-footer p a{
+    color:hsl(0,0%,70%);
+    transition:color .3s ease-in-out;
+}
+.realization-footer p a:hover{
+    color:hsl(0,0%,80%);
+}
+.main-footer>a{
+    color:hsl(130, 49%, 60%);
+    padding:25px 0px;
+    font-family: 'Dancing Script', cursive;
+    font-size:35px;
+}
+.main-footer-content-flex{
+    display:flex;
+    width:70%;
+    margin: 0 auto;
+    padding-top:10px;
+}
+.main-footer-content{
+    width:33%;
+}
+.main-footer-content h3{
+    color:hsl(0,0%,80%);
+    margin-bottom:20px;
+}
+.main-footer-content p{
+    color:hsl(0,0%,80%);
+    line-height: 25px;
+}
+.main-footer-content p a{
+    color:hsl(0,0%,80%);
+    transition:color 0.3s ease-in-out;
+}
+.main-footer-content p a:hover{
+    color:hsl(0,0%,60%);
+}
+.button-div-footer{
+    border:1px solid hsl(0,0%,80%);
+    padding:10px 20px;
+    width:40%;
+    margin:10px auto 0px;
+    transition:all .3s ease-in-out;
+    color:hsl(0,0%,80%);
+}
+.button-div-footer:hover{
+    border:1px solid hsl(0,0%,60%);
+    color:hsl(0,0%,60%);
+}
+
+@media only screen and (min-width:2300px){
+    nav ul li a {
+        font-size: 30px;
+    }
+    .logo-bukowinka a {
+        font-size: 34px;
+    }
+    
+    .main-footer-content h3 {
+        color: hsl(0,0%,80%);
+        margin-bottom: 20px;
+        font-size:35px;
+    }
+    .main-footer-content p {
+        color: hsl(0,0%,80%);
+        line-height: 32px;
+        font-size:25px;
+    }
+    .realization-footer p {
+        color: hsl(0,0%,70%);
+        font-size:28px;
+    }
+}
+@media only screen and (max-width:2300px){
+    
+    footer{
+        height:400px;
+    }
+    .main-footer {
+        height:350px;
+        padding-top: 10px;
+    }
+    .main-footer-content h3 {
+        font-size:26px;
+        margin-bottom: 20px;
+    }
+    .main-footer-content p {
+        font-size:20px;
+        line-height: 27px;
+    }
+    .realization-footer p {
+        font-size:20px;
+    }
+}
+@media only screen and (max-width:1800px){
+    
+    .main-footer-content h3 {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+    .main-footer-content p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    footer{
+        height:350px;
+    }
+    .main-footer {
+        height: 300px;
+        padding-top: 10px;
+    }
+    .main-footer-content-flex {
+        display: flex;
+        width: 80%;
+        padding-top: 10px;
+    }
+    .button-div-footer {
+        border: 1px solid hsl(0,0%,80%);
+        padding: 10px 20px;
+        width: 60%;
+        margin: 10px auto 0px;
+        transition: all .3s ease-in-out;
+        color: hsl(0,0%,80%);
+    }
+    .realization-footer p {
+        font-size: 18px;
+    }
+
+}
+@media only screen and (max-width:1300px){
+    nav ul {
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px 0px;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        position: relative;
+    }
+    
+    .main-footer-content h3 {
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+    .main-footer-content p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .realization-footer p {
+        font-size: 15px;
+    }
+}
+@media only screen and ( max-width:1000px ){
+    nav ul {
+        width: 95%;
+    }
+   
+    .main-footer-content-flex {
+        display: flex;
+        width: 95%;
+        padding-top: 10px;
+    }
+    .main-footer-content-flex {
+        display: flex;
+        width: 95%;
+        padding-top: 20px;
+    }
+}
+@media only screen and (max-width:800px){
+    nav{
+        background: transparent;
+        width:100%;
+        padding:0;
+    }
+    .nav-desk{
+        display:none;
+    }
+    .nav-mob{
+        display:block;
+    }
+    .hamburger{
+        position:relative;
+        right:0;
+        top:0;
+    }
+    .icofont-navigation-menu{
+        position:absolute;
+        right:10px;
+        top:10px;
+        font-size:30px;
+        z-index:999;
+        cursor:pointer;
+    }
+    .icofont-close{
+        position:absolute;
+        right:10px;
+        top:10px;
+        font-size:30px;
+        z-index:999;
+        cursor:pointer;
+        transform:scale(0);
+        opacity:0;
+    }
+    .nav-mob-ul{
+        display:block;
+        text-align:center;
+        background:linear-gradient(to bottom,hsl(0,0%,90%),hsl(0,0%,95%));
+        width:100%;
+        height:0px;
+        overflow: hidden;
+        padding:0;
+    }
+    .nav-mob-ul.active{
+        height:auto !important;
+    }
+    .nav-mob-ul li:nth-child(1){
+        padding-top:20px;
+    }
+    .nav-mob-ul li:nth-child(7){
+        padding-bottom:20px;
+    }
+    nav ul li {
+        line-height:30px;
+    }
+    nav ul li a {
+        color: hsl(0,0%,10%);
+        font-size: 20px;
+        list-style: none;
+        transition: color .3s ease-in-out;
+    }
+    footer {
+        height: 550px;
+    }
+    .main-footer {
+        height: 500px;
+        padding-top: 10px;
+    }
+    .main-footer-content-flex {
+        display: block;
+        width: 95%;
+        padding-top: 0px;
+    }
+    .main-footer-content {
+        width: 100%;
+    }
+    .main-footer-content h3 {
+        font-size: 21px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width:500px){
+    
+}
