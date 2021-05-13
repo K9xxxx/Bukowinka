@@ -28,7 +28,7 @@ descriptions.forEach((item,i)=>{
 
 let tlpercentage=new TimelineMax({onUpdate:updatePercentage});
 
-tlpercentage.to(absoluteDiv,1,{y:170});
+tlpercentage.to(absoluteDiv,1,{y:70});
 
 const controller = new ScrollMagic.Controller();
 let scene = new ScrollMagic.Scene({
