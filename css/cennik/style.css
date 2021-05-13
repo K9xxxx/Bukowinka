@@ -65,13 +65,99 @@ nav ul li a{
     transition:color .3s ease-in-out;
 }
 nav ul li a:hover{
-    color:green;
+    color:hsl(0,0%,100%);
     font-size:20px;
     list-style: none;
     transition:color .3s ease-in-out;
+    text-shadow:0px 0px 5px hsl(0,0%,10%);
 }
 .nav-mob{
     display:none;
+}
+.cennik{
+    text-align:center;
+    height:700px;
+    width:100%;
+}
+.cennik.wiosna-lato{
+    margin-top:50px;
+    font-family: 'Roboto', sans-serif;
+    background:url(../../img/Wiosna-Lato-L.png);
+    background-position:center;
+
+}
+.cennik.jesień-zima{
+    margin-top:20px;
+    font-family: 'Roboto', sans-serif;
+    color:hsl(0,0%,10%);
+    background:url(../../img/Jesien-Zima-L.png);
+    background-position:center;
+}
+.cennik h3{
+    font-family: 'Roboto', sans-serif !important;
+    padding-top:40px;
+    color:hsl(0,0%,90%);
+}
+.cennik.jesień-zima h3{
+    font-family: 'Roboto', sans-serif;
+    padding-top:40px;
+    color:hsl(0,0%,20%);
+}
+.cennik p{
+    font-weight:bold;
+    text-shadow:2px 2px 5px white;
+}
+.cennik-domki div p{
+    font-weight:400;
+    text-shadow: none;
+}
+.cennik .cennik-domki>div{
+    color:hsl(0,0%,90%);
+}
+.cennik-domki>div h5{
+    font-size:27px;
+    padding:20px 0px;
+    border-bottom:2px solid hsl(0,0%,60%);
+}
+.cennik-domki>div path{
+    font-size:24px;
+    padding:20px 0px;
+}
+.price-house{
+    font-size:50px;
+    padding-top:20px;
+}
+.cennik-domki{
+    padding-top:50px;
+    display:flex;
+    justify-content: space-around;
+}
+.cennik-domki div{
+    height:300px;
+    width:275px;
+    display:relative;
+}
+.cennik-domki div p:nth-child(3){
+    padding-bottom:30px;
+}
+.cennik-domki div p:nth-child(4){
+    padding-top:20px;
+}
+
+.cennik .cennik-domki div{
+    height:300px;
+    width:275px;
+    background-color:hsl(0,0%,15%);
+    box-shadow:0px 0px 20px hsl(0,0%,90%) inset;
+    border:3px solid hsl(0,0%,40%);
+}
+
+.cennik .cennik-domki div h5{
+    border-bottom:3px solid hsl(0,0%,40%);
+}
+
+.cennik .cennik-domki div p:nth-child(4){
+    border-top:3px solid hsl(0,0%,40%);
 }
 .logo-bukowinka a{
     font-family: 'Dancing Script', cursive;
@@ -87,9 +173,11 @@ nav ul li a:hover{
     padding:200px 50px 50px;
 }
 .first-section h3{
+    color: hsl(0,0%,20%);
     font-family:"Caveat";
     font-size:50px;
     text-align:center;
+    text-shadow:0px 0px 15px white;
 }
 .domek-con{
     display:flex;
@@ -125,6 +213,30 @@ nav ul li a:hover{
     padding-top:20px;
     color:hsl(0,0%,20%);
 }
+.odnosniki{
+    padding-top:50px;
+    margin:0 auto;
+    width:30%;
+    display:flex;
+    justify-content: space-around;
+}
+.odnosniki a{
+    background:linear-gradient(to bottom,hsl(0,0%,20%),hsl(0,0%,10%));
+    padding:15px 40px;
+    width:140px;
+    color:hsl(0,0%,90%);
+    border:2px solid white;
+    border:2px solid black;
+    transition:color .3s ease-in-out;
+}
+.odnosniki a:hover{
+    color:hsl(0,0%,100%);
+}
+
+
+.odnosniki:nth-child(1){
+    border:1px solid white;
+}
 .numer-domka{
     font-size:50px;
     text-align:center;
@@ -134,7 +246,7 @@ nav ul li a:hover{
 }
 .additional-info{
     width:50%;
-    margin:0 auto;
+    margin:0 auto 40px;
 }
 .additional-info p{
     margin-top:20px;
@@ -337,6 +449,23 @@ footer{
         font-size: 15px;
     }
 }
+@media only screen and ( max-width:1200px ){
+    .cennik .cennik-domki div {
+        height: 280px;
+        width: 225px;
+        background-color: hsl(0,0%,15%);
+        box-shadow: 0px 0px 20px hsl(0deg 0% 90%) inset;
+        border: 3px solid hsl(0,0%,40%);
+    }
+    .odnosniki {
+        padding-top: 50px;
+        margin: 0 auto;
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
 @media only screen and ( max-width:1000px ){
     .numer-domka {
         font-size: 40px;
@@ -365,6 +494,59 @@ footer{
     }
 }
 @media only screen and (max-width:800px){
+    .cennik.wiosna-lato {
+        font-family: 'Roboto', sans-serif;
+        background: url(../../img/Wiosna-Lato-Mob.png) no-repeat;
+        background-position: center;
+        background-size:cover;
+    }
+    .odnosniki {
+        padding-top: 50px;
+        margin: 0 auto;
+        width: 75%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .cennik.jesień-zima {
+        margin-top: 20px;
+        font-family: 'Roboto', sans-serif;
+        color: hsl(0,0%,10%);
+        background: url(../../img/Jesien-Zima-Mob.png);
+        background-position: center;
+        background-size:cover;
+    }
+    .cennik-domki {
+        margin:0 auto;
+        padding-top: 50px;
+        display: block;
+        justify-content: space-around;
+    }
+    .cennik .cennik-domki div {
+        height: 280px;
+        width: 225px;
+        background-color: hsl(0,0%,15%);
+        box-shadow: 0px 0px 20px hsl(0deg 0% 90%) inset;
+        border: 3px solid hsl(0,0%,40%);
+        margin: 10px auto;
+    }
+    .cennik {
+        text-align: center;
+        height: 1200px;
+        width: 100%;
+    }
+    .cennik-domki {
+    margin: 0 auto;
+    padding-top: 50px;
+    display: block;
+    justify-content: space-around;
+}
+    .first-section h3 {
+        color: hsl(0,0%,20%);
+        font-family: "Caveat";
+        font-size: 40px;
+        text-align: center;
+        text-shadow: 0px 0px 15px white;
+    }
     .domek-con {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -408,11 +590,12 @@ footer{
         cursor:pointer;
         transform:scale(0);
         opacity:0;
+        color:hsl(0,0%,90%);
     }
     .nav-mob-ul{
         display:block;
         text-align:center;
-        background:linear-gradient(to bottom,hsl(0,0%,90%),hsl(0,0%,95%));
+        background:linear-gradient(to bottom,hsl(130, 49%, 20%),hsl(130, 49%, 30%));
         width:100%;
         height:0px;
         overflow: hidden;
@@ -431,7 +614,7 @@ footer{
         line-height:30px;
     }
     nav ul li a {
-        color: hsl(0,0%,10%);
+        color:hsl(0,0%,90%);
         font-size: 20px;
         list-style: none;
         transition: color .3s ease-in-out;
@@ -458,6 +641,46 @@ footer{
 }
 
 @media only screen and (max-width:500px){
+    .first-section h3 {
+        color: hsl(0,0%,20%);
+        font-family: "Caveat";
+        font-size: 35px;
+        text-align: center;
+        text-shadow: 0px 0px 15px white;
+    }
+    .odnosniki {
+        padding-top: 20px;
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+        justify-content: space-around;
+    }
+    .odnosniki a {
+        display:block;
+        margin: 10px auto;
+    }
+    .cennik-domki>div h5 {
+        font-size: 23px;
+        padding: 20px 0px;
+        border-bottom: 2px solid hsl(0,0%,60%);
+    }
+    .price-house {
+        font-size: 40px;
+        padding-top: 20px;
+    }
+    .cennik {
+        text-align: center;
+        height: 1175px;
+        width: 100%;
+    }
+    .cennik .cennik-domki div {
+        height: 250px;
+        width: 220px;
+        background-color: hsl(0,0%,15%);
+        box-shadow: 0px 0px 20px hsl(0deg 0% 90%) inset;
+        border: 3px solid hsl(0,0%,40%);
+        margin: 10px auto;
+    }
     .first-section {
         padding-top: 200px;
         display: block;
