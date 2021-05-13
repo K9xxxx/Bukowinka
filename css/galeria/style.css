@@ -65,10 +65,11 @@ nav ul li a{
     transition:color .3s ease-in-out;
 }
 nav ul li a:hover{
-    color:green;
+    color:hsl(0,0%,100%);
     font-size:20px;
     list-style: none;
     transition:color .3s ease-in-out;
+    text-shadow:0px 0px 5px hsl(0,0%,10%);
 }
 .nav-mob{
     display:none;
@@ -87,7 +88,7 @@ nav ul li a:hover{
 h2{
     text-align: center;
     color:hsl(0,0%,20%);
-    margin:30px 0px 50px;
+    margin:0px 0px 50px;
     font-family:"Caveat";
     font-size:45px;
   }
@@ -333,11 +334,12 @@ footer{
         cursor:pointer;
         transform:scale(0);
         opacity:0;
+        color:hsl(0,0%,90%);
     }
     .nav-mob-ul{
         display:block;
         text-align:center;
-        background:linear-gradient(to bottom,hsl(0,0%,90%),hsl(0,0%,95%));
+        background:linear-gradient(to bottom,hsl(130, 49%, 20%),hsl(130, 49%, 30%));
         width:100%;
         height:0px;
         overflow: hidden;
@@ -356,7 +358,7 @@ footer{
         line-height:30px;
     }
     nav ul li a {
-        color: hsl(0,0%,10%);
+        color:hsl(0,0%,90%);
         font-size: 20px;
         list-style: none;
         transition: color .3s ease-in-out;
