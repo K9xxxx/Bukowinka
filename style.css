@@ -204,10 +204,11 @@ nav ul li a:hover{
     font-family: 'Caveat', cursive;
 }
 .short-description article{
-    font-family: 'Caveat', cursive;
+    font-family: 'roboto', cursive;
     margin-top:30px;
     font-size:30px;
     line-height:30px;
+    color: hsl(0,0%,30%);
 }
 .paralax-img{
     width:100%;
@@ -453,7 +454,7 @@ footer{
     }
     .short-description article {
         margin-top: 30px;
-        font-size: 40px;
+        font-size: 25px;
         line-height:40px;
     }
     .section-third {
@@ -508,7 +509,7 @@ footer{
     }
     .short-description article {
         margin-top: 30px;
-        font-size: 35px;
+        font-size: 25px;
         line-height: 38px;
     }
     .section-third {
@@ -711,7 +712,7 @@ footer{
     }
     .short-description article {
         margin-top: 30px;
-        font-size: 30px;
+        font-size: 20px;
         line-height: 38px;
     }
     .description-div-flex2 {
@@ -904,8 +905,8 @@ footer{
     }
     .short-description article {
         margin-top: 30px;
-        font-size: 27px;
-        line-height: 32px;
+        font-size: 18px;
+        line-height: 25px;
     }
     .parallax {
         min-height: 250px;
@@ -1043,8 +1044,8 @@ footer{
     }
     .short-description article {
         margin-top: 30px;
-        font-size: 22px;
-        line-height: 27px;
+        font-size: 16px;
+        line-height: 20px;
     }
     .description-div-flex2 h3 {
         font-size: 35px;
