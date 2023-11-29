@@ -136,6 +136,8 @@ nav ul li a:hover{
 .info-content h2{
     color:hsl(0,0%,20%);
     text-align:center;
+    font-family:"Caveat";
+    font-size:40px;
 }
 .info-content article{
     color:hsl(0,0%,20%);
@@ -351,7 +353,7 @@ footer{
         margin-bottom: 40px;
     }
     .info h2 {
-        font-size: 22px;
+        font-size: 30px;
     }
     .info article {
         padding: 10px 20px;

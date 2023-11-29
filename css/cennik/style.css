@@ -84,14 +84,18 @@ nav ul li a:hover{
     font-family: 'Roboto', sans-serif;
     background:url(../../img/Wiosna-Lato-L.png);
     background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 .cennik.jesień-zima{
-    margin-top:20px;
+    margin-top:0px;
     font-family: 'Roboto', sans-serif;
     color:hsl(0,0%,10%);
     background:url(../../img/Jesien-Zima-L.png);
     background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .cennik h3{
     font-family: 'Roboto', sans-serif !important;
@@ -170,7 +174,7 @@ nav ul li a:hover{
 .first-section{
     padding-top:200px;
     display:block;
-    padding:200px 50px 50px;
+    padding:200px 0px 50px;
 }
 .first-section h3{
     color: hsl(0,0%,20%);
